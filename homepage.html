@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="homepage.css" rel="stylesheet" type="text/css" />
+  <title>khushpreet kaur</title>
+  <script>
+    // JavaScript functions
+    function changeBackgroundColor(elementId, color) {
+      document.getElementById(elementId).style.backgroundColor = color;
+    }
+
+    function displayRandomQuote() {
+      var quotes = [
+        "learning is the best exercise to keep you young.",
+        "never quit until its done",
+        "give a chance to imperfections to describe you perfectly",
+        "your life, your story just dont let anyone to destroy it."
+      ];
+      var randomIndex = Math.floor(Math.random() * quotes.length);
+      alert(quotes[randomIndex]);
+    }
+  </script>
+</head>
+<!-- main content -->
+
+<body onload="displayRandomQuote()">
+  <div class="navbar">
+    <ul>
+      <li><a href="file:///C:/programming%20fundamentals/finalproject/homepage.html"><b>HOME</b></a></li>
+      <li><a href="file:///C:/programming%20fundamentals/finalproject/aboutme.html"><b>ABOUT ME</b></a></li>
+    </ul>
+  </div>
+
+  <p>Welcome </p>
+  <h1>  CHEAT SHEETS TO MAKE CODING EASY</h1>
+<!-- main  headings-->
+<!-- starting of buttons for different cheat sheets-->
+
+  <ul>
+    <div class="left">
+      <div class="html cheatSheetItem" onclick="changeBackgroundColor('htmlSection', 'lightblue')">
+        <li><a href="C:\programming fundamentals\finalproject\htmlcheatsheet.html"><img
+              src="https://3.bp.blogspot.com/-J6thiouelZg/WqfxM5SCDNI/AAAAAAAATsk/dDtY6BPwLowg49NVK_Qd2X86xv2tvsFUgCLcBGAs/s1600/html5.jpg"></a><br>
+        </li>
+        <h2> HTML cheatsheets </h2>
+      </div>
+      <div class="css cheatSheetItem" onclick="changeBackgroundColor('cssSection', 'lightgreen')">
+        <li><a href="file:///C:/programming%20fundamentals/finalproject/csscheatsheet.html"><img
+              src="https://colorlib.com/wp/wp-content/uploads/sites/2/CSS3.png"></a><br></li>
+        <h2>CSS cheatsheets </h2>
+      </div>
+    </div>
+    <div class="right">
+      <div class="js cheatSheetItem" onclick="changeBackgroundColor('jsSection', 'lightcoral')">
+        <li><a href="file:///C:/programming%20fundamentals/finalproject/jscheatsheet.html"><img
+              src="https://thoughtgem.com/wp-content/uploads/2021/04/javascript-illustration-e1618770403221.png"> </a><br>
+        </li>
+        <h2>JavaScript cheatsheets </h2>
+      </div>
+      <div class="resume cheatSheetItem" onclick="changeBackgroundColor('resumeSection', 'lightyellow')">
+        <li><a href="file:///C:/programming%20fundamentals/finalproject/resume.html"><img
+              src="https://i.ytimg.com/vi/Zh2NVaER6tw/maxresdefault.jpg"></a><br>
+        </li>
+        <h2>Resume </h2>
+      </div>
+    </div>
+  </ul>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="resume.css" rel="stylesheet" type="text/css" />
+  <title>khushpreet kaur</title>
+  <style>
+    .containerx {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    function showSlides() {
+      var divs = document.querySelectorAll('.containerx');
+      var currentIndex = 0;
+
+      function showDiv(index) {
+        divs.forEach(function (div, i) {
+          div.style.display = i === index ? 'block' : 'none';
+        });
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % divs.length;
+        showDiv(currentIndex);
+      }
+
+      showDiv(currentIndex);
+      setInterval(nextSlide, 5000);
+    }
+
+    window.onload = showSlides;
+  </script>
+
+  <div class="container">
+    <h1> khushpreet<br> Kaur</h1>
+    <div class="education">
+      <h3>Education</h3>
+      <p>BOW VALLEY COLLEGE CALGARY (ALBERTA)<br> 5 SEPTEMBER 2023 - CURRENTLY STUDYING</p>
+    </div>
+    <div class="experience">
+      <h3> Work Experience</h3>
+      <p>
+        <h4>SUPERPUFF (Production Worker)</h4>
+        23 OCTOBER 2023 - 20 NOVEMBER 2023<br>
+        <ul>
+          <li> Efficiently performed tasks on the production line, ensuring the<br> timely and accurate assembly of products.</li><br>
+          <li> Collaborated with team members to meet production goals<br> and maintain high-quality standards.</li><br>
+          <li> Adhered to safety protocols and participated in regular<br> training sessions to enhance workplace safety.</li><br>
+        </ul>
+        <h4>GDI (CLEANING)</h4>
+        1 DECEMBER 2023 - WORKING<br>
+        <ul>
+          <li> Worked to complete my task on time with quality</li><br>
+          <li> Collaborated with team members and tried to be friendly and patient to make our teams super effective and perfect.</li><br>
+          <li>learn to take the responsibilities and tried to provide the best services to the people who trust us.</li><br>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <div class="containerx">
+    <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li> Production: Demonstrated proficiency in assembly line<br> operations and adherence to quality standards.<br></li>
+        <li>Customer Service: Proven ability to provide excellent service,<br> handle transactions, and address customer inquiries.<br></li>
+        <li> Teamwork: Collaborated effectively with colleagues to<br> achieve production targets and deliver a positive customer<br> experience.<br></li>
+        <li> cleaniness- learn to maintain the cleaniness in surrounding and<br> learn to be responsible and handle the situation with perfection.<br></li>
+        <li> Safety Compliance: Adhered to workplace safety protocols<br> and actively participated in safety training.<br></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="containerx">
+    <div class="objective">
+      <h3>Objectives</h3>
+      <p>As a recent high school graduate with a<br> strong academic background, I am<br> seeking opportunities to apply my skills<br> and contribute to a dynamic work<br> environment. I am enthusiastic, detailoriented,<br> and eager to learn and grow<br> within a professional setting.<br></p>
+    </div>
+  </div>
+
+  <div class="containerx">
+    <div class="contact">
+      <h3>CONTACT</h3>
+      <address>
+        PHONE: <a href="tel:+1-0647-302-4132">825-302-4132</a><br>
+        EMAIL: <a href="mailto:bkhushpreetkaur@gmail.com">bkhushpreetkaur@gmail.com</a><br>
+        Address : 141 saddlemead road calgary, Alberta T3J 4J3
+      </address>
+    </div>
+  </div>
+
+</body>
+
+</html>
